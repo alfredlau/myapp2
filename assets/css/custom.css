@@ -1,0 +1,436 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+
+@mixin bggrad( $angle ) {
+  background: linear-gradient( #{$angle}deg, #fb83fa 0%,#31bcb8 100%);
+} 
+
+@mixin borgrad( $angle ) {
+  border-image: linear-gradient( #{$angle}deg, #fb83fa 0%,#31bcb8 100%) 1 round;
+} 
+
+
+/*-------------------------
+	General Styles
+--------------------------*/
+
+body{
+	font-family: "HelveticaNeue-Light", "Helvetica Neue Light", sans-serif;
+	width: 100%;
+	padding: 0px;
+	font-style: normal;
+	position: relative;
+	margin: 0px auto;
+	color: #888888;
+	line-height: 1;
+}
+
+a{
+	color :#8d736c !important;
+}
+
+div	{
+	display: block;
+}
+/*-----------------------------------
+	Navigation Bar Styles
+------------------------------------*/
+
+.navbar{
+	padding: 10px 0;
+	background-color:#F6F7FA;
+	transition:padding 0.4s;
+}
+
+
+/* Contract the navbar while scrolling */
+
+.navbar.scrolled{
+	box-shadow: 0 3px 3px rgba(0,0,0,0.1);
+	padding: 6px 0;
+}
+
+#myNavbar{
+	overflow-x: hidden;
+}
+
+#myNavbar ul li:last-child a{
+	padding-right: 0;
+}
+
+/* Brand name */
+
+.brandStyle{
+	color: #888888 !important;
+	font-family : Cabin, sans-serif;
+	font-size: 24px;
+}
+
+/* Menu */
+
+.menustyle{
+	text-transform: uppercase;
+	font-size: 12px;
+	font-weight: bold;
+}
+
+
+/*-----------------------------------
+	Main Picture 
+------------------------------------*/
+
+.herochef{
+	background: url(/assets/images/hero.jpg);
+	position: relative;
+	background-repeat: no-repeat;
+	width: 500px;
+	height: 600px;
+	top: 90px;
+	left: 40%;
+	margin-left: -400px;
+
+}
+
+.tagline{
+	position: absolute;
+	top: 250px;
+	left: 50%;
+	width: 400px;
+	height: 700px;
+	margin-left: 25px;
+	text-align: left;
+}
+
+.tagline h1{
+	font-size: 60px;
+	font-family: Cabin, sans-serif;
+	text-align: left;
+	line-height: 80px;
+	display: block;
+	width: 380px;
+	color: #8d8d8d;
+}
+
+.intro{
+	position: relative;
+	overflow: hidden;
+	background-color: #edf0f4;
+	margin-top: 20px;
+	width: 100%;
+	padding-left: 20px;
+	padding-right: 20px;
+}
+
+.intro_wrapper{
+	width: 100%;
+	max-width: 940px;
+	margin: 0px auto 0px auto;
+}
+
+.intro ul li{
+	display: inline-block;
+	text-align: center;
+	width: 30%;
+	padding-top: 40px;
+	padding-bottom: 30px;
+	padding-left: 10%;
+}
+
+.intro p{
+	font-size: 22px;
+	margin-top: 15px;
+	line-height: 1.4em;
+	margin-bottom: 1em;
+}
+
+.step-number{
+	width: 120px;
+	height: 120px;
+	margin-bottom: 20px;
+	opacity: 0.9
+}
+
+
+/*-----------------------------------
+		Text
+------------------------------------*/
+
+/* Titles */
+
+/*-----------------------------------
+	Features
+------------------------------------*/
+
+/* Container */
+
+*, *:before, *:after {
+  -moz-box-sizing: border-box; -webkit-box-sizing: border-box; box-sizing: border-box;
+ }
+  
+ #wrapper {
+     display: block;
+     background: #F5F5F5;
+     color: #8494A6;
+     font-size: 18px;
+     height: 100%;
+     top: 0px;
+     padding-bottom: 60px;
+     position: relative;  
+ }
+ 
+p { font: 13px;color:gray;}
+
+h1 {
+    font-size:35px;
+    color: gray;
+    text-align: center;
+    text-shadow: rgb(255,255,255) 0px 1px 0.2px;
+    }
+    
+h2 {
+    font-size: 25px;
+	text-align: center;
+    color: #4C5767;
+    font-weight: 100;
+    letter-spacing: 0.2px;
+	}
+
+section {
+		display: block;
+		width: 900px;
+		margin: 50px auto;
+		padding: 0px !important;
+		min-height: 0px !important;
+		position: relative;   
+    }
+    
+
+    .features ul li{
+		width: 400px;
+		display: inline-block;
+		vertical-align: top;
+		margin: 10px;
+        padding:20px;
+        }
+    
+    .main_features{
+    	position: relative;
+    	display: block;
+    	width: 940px;
+    	margin: 0 auto;
+    	margin-top: 60px;
+    	margin-bottom: 60px;
+    	padding-bottom: 50px;
+    	border-bottom: 1px solid #c5c4c3;
+    }
+
+    .feature_image_right{
+		width: 400px;
+		height: 200px;
+		padding-top: 10px;
+		margin-left: 90px;
+		padding: 0px;
+    }
+
+     .feature_right{
+    	height: 200px;
+    	width: 400px;;
+    	float: left;
+    	margin-right: 50px;
+    	padding-left: 50px;
+    	padding-top: 40px;
+    }
+
+    .feature_image_left{
+    	height: 200px;
+    	width: 500px;;
+    	float: left;
+    	margin-right: 50px;
+    }
+
+    .feature_left{
+    	position: relative;
+		top: 40px;
+		width: 450px;
+		height: 200px;
+		margin-left: 50%;
+		text-align: left;
+		padding-top: 10px;
+    }
+
+
+    .main_features h2{
+    	text-align: left;
+    }
+
+    .main_copy2{
+        width:450px;
+        padding: 30px 30px 20px 20px;
+    }
+
+    .main1 h2{
+        text-align: left;
+        margin: 0px 0px 30px 0px;
+    }
+    .main2 h2{
+        text-align: left;
+        margin: 0px 0px 30px 0px;
+    }
+    
+    .more ul li{
+        width:200;
+        display: inline-block;
+        margin: 30px;
+        padding: 20px;
+        vertical-align: top;
+        text-align: center;
+}
+
+	.list_dish {
+	position: relative;
+	overflow: hidden;
+	background-color: #edf0f4;
+	width: 100%;
+	}
+
+	.dish {
+		width: 100%;
+		max-width: 940px;
+		margin: 0 auto;
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.dish ul {
+		list-style: none;
+	}
+
+	.dish ul li {
+		display: inline-block;
+		position: relative;
+		width: 30%;
+		height: 270px;
+		margin: 0;
+		vertical-align: top;
+		margin-left: 0px;
+	}
+
+	.dish_image {
+		overflow: hidden;
+		width: 290px;
+		height: 270px;
+	}
+
+	.dish_description {
+		margin-bottom: 90px;
+		margin-top: 80px;
+	}
+
+/*-----------------------------------
+		Footer
+------------------------------------*/
+
+.footer{
+	padding: 13px 0px 0px 0px;
+	border-top: 1px solid #e5e5e5;
+	color: #757879;
+	font-size: 12px;
+	margin:70px auto;
+}
+
+/* Social buttons */
+
+.socialButtons img{
+	width:36px;
+	opacity:0.6;
+}
+
+.socialButtons a{
+	display:inline-block;
+}
+
+.socialButtons a:hover img{
+	opacity:0.8;
+}
+
+#footerLogoText{
+	line-height:30px;
+}
+
+/*-----------------------------------
+	Helper classes
+------------------------------------*/
+
+/*-----------------------------------
+	Media querries
+------------------------------------*/
+
+/* On smaller screens */
+
+@media (max-width: 992px) {
+	
+	/* General */
+	
+	body{
+		padding-top: 76px;
+	}
+
+	li{
+		padding-left:8px;
+	}
+	
+	h1 {
+		margin-top: 80px;
+	}
+
+	/* Navigation bar */
+	
+	.navbar{
+		padding: 16px 0;
+	}
+	
+	/* Main picture */
+	
+	.headpicture{
+		height: 250px;
+	}
+	
+	/* Latest Projects */
+	
+	.textStyle{
+		margin-top: 40px;
+	}
+	
+	.titleStyle{
+		margin-top: 70px;
+	}
+	
+	/* Footer */
+	
+	.footer{
+		margin: 40px auto;
+	}
+	
+	#footerLogoText{
+		text-align: center;
+	}
+	
+	/* Sharing buttons */
+	
+	.responsiveAlign {
+		text-align: center;
+		padding: 5px ;
+	}
+
+}
+
+/* On bigger screens */ 
+
+@media (min-width: 993px) {
+	
+	/* Sharing buttons */
+	
+	.responsiveAlign {
+		float: right;
+	}
+}
+
